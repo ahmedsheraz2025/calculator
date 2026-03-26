@@ -42,6 +42,6 @@ ehthumbs.db
 
 # Gemini CLI and Spec-Kit Plus specific files
 .gemini/
-.specify/
+
 *.tmp
 *.log
