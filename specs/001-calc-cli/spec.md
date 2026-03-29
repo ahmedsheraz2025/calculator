@@ -1,9 +1,9 @@
-# Feature Specification: Calculator CLI Core
+# Feature Specification: Calculator CLI Core (Python Implementation)
 
-**Feature Branch**: `001-calc-cli`  
-**Created**: 2026-03-28  
-**Status**: Draft  
-**Input**: User description: "Implement a CLI-based interactive REPL calculator supporting basic arithmetic operations (+, -, *, /), decimal numbers, clear, and exit commands, with robust error handling for division by zero and invalid inputs."
+**Feature Branch**: `main` (Direct implementation as per user request)
+**Created**: 2026-03-29
+**Status**: Draft
+**Input**: User description: "my calculator project should be in python programming language; which will contains clean and easy to understand code with comments, please do this work in main branch dont make a new one."
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -11,7 +11,7 @@
 
 As a user, I want to enter a simple arithmetic expression (e.g., `5 + 3`) and see the result instantly in the console.
 
-**Why this priority**: Core functionality of a calculator. Without basic arithmetic, the app delivers no value.
+**Why this priority**: Core functionality. Without basic arithmetic, the app delivers no value.
 
 **Independent Test**: Can be tested by running the CLI tool, typing `5 + 3`, and verifying the output is `8`.
 
@@ -23,13 +23,13 @@ As a user, I want to enter a simple arithmetic expression (e.g., `5 + 3`) and se
 
 ---
 
-### User Story 2 - Error Handling (Priority: P1)
+### User Story 2 - Robust Error Handling (Priority: P1)
 
-As a user, I want to be informed when I enter an invalid expression (e.g., division by zero or nonsensical input) so that I can correct it.
+As a user, I want to be informed when I enter an invalid expression so that I can correct it without the program crashing.
 
-**Why this priority**: Required for robustness as per the project's Constitution. Prevents app crashes.
+**Why this priority**: Required for reliability. Prevents application failure during common user errors.
 
-**Independent Test**: Can be tested by typing `10 / 0` and verifying an error message is shown instead of a crash.
+**Independent Test**: Can be tested by typing `10 / 0` and verifying an error message is shown.
 
 **Acceptance Scenarios**:
 
@@ -38,65 +38,47 @@ As a user, I want to be informed when I enter an invalid expression (e.g., divis
 
 ---
 
-### User Story 3 - Decimal Arithmetic (Priority: P2)
+### User Story 3 - Code Maintainability (Priority: P2)
 
-As a user, I want to perform calculations with decimal numbers (e.g., `5.5 + 4.5`).
+As a developer/reviewer, I want the code to be clean, easy to understand, and well-commented so that I can easily maintain or extend it.
 
-**Why this priority**: Essential for a complete "basic" calculator experience.
+**Why this priority**: Explicit user requirement for project quality and long-term health.
 
-**Independent Test**: Can be tested by typing `0.1 + 0.2` and verifying the output is `0.3`.
-
-**Acceptance Scenarios**:
-
-1. **Given** the REPL is running, **When** I enter `1.5 * 2`, **Then** the system displays `3`.
-2. **Given** the REPL is running, **When** I enter `.5 + .5`, **Then** the system displays `1`.
-
----
-
-### User Story 4 - Session Management (Priority: P2)
-
-As a user, I want to clear the current calculation or exit the application.
-
-**Why this priority**: Improves usability by allowing session control.
-
-**Independent Test**: Can be tested by typing `exit` and verifying the program terminates.
+**Independent Test**: Code review against PEP 8 standards and verification of docstrings/comments.
 
 **Acceptance Scenarios**:
 
-1. **Given** the REPL is running, **When** I enter `exit` or `quit`, **Then** the application shuts down.
-2. **Given** the REPL is running, **When** I enter `clear`, **Then** the console is cleared of previous results (if applicable).
-
-### Edge Cases
-
-- **Division by zero**: Handled by User Story 2.
-- **Large numbers**: System must handle numbers beyond standard integer ranges (using floating-point precision).
-- **Precision**: Results must be accurate up to 10 decimal places (as per Constitution).
-- **Whitespace**: Input like ` 5  +   3 ` should be handled correctly.
+1. **Given** the source code is opened, **When** reviewing functions, **Then** each has a clear docstring explaining its purpose.
+2. **Given** the source code is opened, **When** reviewing logic, **Then** inline comments explain complex transformations.
 
 ## Requirements *(mandatory)*
 
 ### Functional Requirements
 
-- **FR-001**: System MUST provide an interactive REPL interface.
+- **FR-001**: System MUST provide an interactive REPL interface in the terminal.
 - **FR-002**: System MUST support addition (+), subtraction (-), multiplication (*), and division (/).
-- **FR-003**: System MUST support decimal numbers (e.g., 5.5, .3).
-- **FR-004**: System MUST handle division by zero with a human-readable error message.
-- **FR-005**: System MUST handle invalid mathematical syntax (e.g., "5++3") with a clear error message.
-- **FR-006**: System MUST support an 'exit' or 'quit' command to terminate the REPL.
-- **FR-007**: System MUST support a 'clear' command to reset the current state.
-- **FR-008**: System MUST display results formatted for readability (e.g., up to 10 decimal places as per Constitution).
-- **FR-009**: System MUST support chained operations like `5 + 2 * 3` and handle standard operator precedence (PEMDAS/BODMAS).
+- **FR-003**: System MUST support decimal numbers and precision up to 10 decimal places.
+- **FR-004**: System MUST handle division by zero and syntax errors gracefully.
+- **FR-005**: System MUST support 'exit', 'quit', and 'clear' commands.
+- **FR-006**: System MUST follow standard operator precedence (PEMDAS).
+
+### Technical Constraints (User Mandated)
+
+- **TR-001**: Implementation MUST be in Python (3.10+).
+- **TR-002**: Code MUST adhere to PEP 8 style guidelines for readability.
+- **TR-003**: All primary logic and functions MUST be documented with comments and docstrings.
 
 ### Key Entities
 
-- **Expression**: The mathematical string entered by the user.
-- **Result**: The numerical output of a evaluated Expression.
+- **Expression**: The mathematical string input from the user.
+- **Result**: The numerical evaluation of the expression.
 
 ## Success Criteria *(mandatory)*
 
 ### Measurable Outcomes
 
-- **SC-001**: Users receive a result or error for any input in under 100ms.
-- **SC-002**: 100% of valid arithmetic expressions return mathematically correct results (verified against a standard library).
-- **SC-003**: 100% of division-by-zero attempts are caught and reported without application failure.
-- **SC-004**: Application terminates successfully on 'exit' or 'quit' commands.
+- **SC-001**: Arithmetic results are mathematically accurate to within 10 decimal places.
+- **SC-002**: 100% of functions have descriptive docstrings.
+- **SC-003**: Zero crashes occur when processing invalid inputs (syntax or division by zero).
+- **SC-004**: Results are displayed in under 100ms for standard expressions.
+- **SC-005**: Code passes `flake8` or `black` formatting checks with zero errors.

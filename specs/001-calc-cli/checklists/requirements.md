@@ -1,12 +1,13 @@
-# Specification Quality Checklist: Calculator CLI Core
+# Specification Quality Checklist: Calculator CLI Core (Python Implementation)
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning
-**Created**: 2026-03-28
+**Created**: 2026-03-29
 **Feature**: [specs/001-calc-cli/spec.md](specs/001-calc-cli/spec.md)
 
 ## Content Quality
 
 - [x] No implementation details (languages, frameworks, APIs)
+  - *Note: Python language is included as an explicit user-mandated constraint, which is valid in this context.*
 - [x] Focused on user value and business needs
 - [x] Written for non-technical stakeholders
 - [x] All mandatory sections completed
@@ -17,8 +18,9 @@
 - [x] Requirements are testable and unambiguous
 - [x] Success criteria are measurable
 - [x] Success criteria are technology-agnostic (no implementation details)
+  - *Note: SC-005 references formatting tools (flake8/black) as a proxy for the user's "clean code" requirement.*
 - [x] All acceptance scenarios are defined
-- [x] Edge cases are identified
+- [x] Edge cases are identified (division by zero, syntax errors)
 - [x] Scope is clearly bounded
 - [x] Dependencies and assumptions identified
 
@@ -27,8 +29,8 @@
 - [x] All functional requirements have clear acceptance criteria
 - [x] User scenarios cover primary flows
 - [x] Feature meets measurable outcomes defined in Success Criteria
-- [x] No implementation details leak into specification
+- [x] No implementation details leak into specification (outside of user-mandated constraints)
 
 ## Notes
 
-- Chained operations (Q1: B) confirmed and updated in FR-009. Specification is now COMPLETE and ready for planning.
+- Feature is ready for planning on the `main` branch.
