@@ -208,3 +208,9 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- Python 3.10+ + Standard Library (`math`, `decimal`, `ast` or `operator`) (001-calc-cli)
+
+## Recent Changes
+- 001-calc-cli: Added Python 3.10+ + Standard Library (`math`, `decimal`, `ast` or `operator`)
