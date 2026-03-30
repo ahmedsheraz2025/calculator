@@ -1,5 +1,5 @@
 ---
-id: 13
+id: "0012"
 title: Execute Agentic Git Workflow
 stage: general
 date_iso: 2026-03-29
@@ -18,9 +18,10 @@ links:
 files_yaml:
   - specs/001-calc-cli/spec.md
   - specs/001-calc-cli/checklists/requirements.md
-  - history/prompts/001-calc-cli/0012-update-spec-for-python-implementation.spec.prompt.md
+  - history/prompts/001-calc-cli/0003-update-spec-for-python-implementation.spec.prompt.md
   - history/prompts/general/0010-initialize-git-workflow-and-commit-specification.general.prompt.md
   - history/prompts/general/0011-revert-feature-creation-and-analyze-opportunities.general.prompt.md
+  - history/prompts/general/0012-execute-agentic-git-workflow.general.prompt.md
 tests_yaml:
   - none
 ---

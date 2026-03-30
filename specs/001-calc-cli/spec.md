@@ -57,7 +57,7 @@ As a developer/reviewer, I want the code to be clean, easy to understand, and we
 
 - **FR-001**: System MUST provide an interactive REPL interface in the terminal.
 - **FR-002**: System MUST support addition (+), subtraction (-), multiplication (*), and division (/).
-- **FR-003**: System MUST support decimal numbers and precision up to 10 decimal places.
+- **FR-003**: System MUST support decimal numbers and dynamic precision. Results MUST be displayed as integers if they are whole numbers (e.g., `3 + 3 = 6`), and with up to 10 decimal places ONLY if necessary (e.g., `1 / 3 = 0.3333333333`, `1.5 + 1.5 = 3`).
 - **FR-004**: System MUST handle division by zero and syntax errors gracefully.
 - **FR-005**: System MUST support 'exit', 'quit', and 'clear' commands.
 - **FR-006**: System MUST follow standard operator precedence (PEMDAS).
@@ -77,7 +77,7 @@ As a developer/reviewer, I want the code to be clean, easy to understand, and we
 
 ### Measurable Outcomes
 
-- **SC-001**: Arithmetic results are mathematically accurate to within 10 decimal places.
+- **SC-001**: Arithmetic results are mathematically accurate and formatted dynamically (integers for whole numbers, up to 10 decimal places for fractions).
 - **SC-002**: 100% of functions have descriptive docstrings.
 - **SC-003**: Zero crashes occur when processing invalid inputs (syntax or division by zero).
 - **SC-004**: Results are displayed in under 100ms for standard expressions.

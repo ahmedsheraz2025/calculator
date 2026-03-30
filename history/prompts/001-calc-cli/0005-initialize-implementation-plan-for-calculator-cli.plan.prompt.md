@@ -1,5 +1,5 @@
 ---
-id: 0017
+id: "0005"
 title: Initialize Implementation Plan for Calculator CLI
 stage: plan
 date: 2026-03-29

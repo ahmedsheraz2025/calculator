@@ -1,5 +1,5 @@
 ---
-id: 15
+id: "0014"
 title: Delete Remote Feature Branch
 stage: general
 date_iso: 2026-03-29
@@ -16,7 +16,7 @@ links:
   adr: null
   pr: null
 files_yaml:
-  - history/prompts/general/0015-delete-remote-feature-branch.general.prompt.md
+  - history/prompts/general/0014-delete-remote-feature-branch.general.prompt.md
 tests_yaml:
   - none
 ---

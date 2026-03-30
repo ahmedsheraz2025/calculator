@@ -1,5 +1,5 @@
 ---
-id: 0018
+id: "0015"
 title: Execute Agentic Git Workflow for Implementation Plan
 stage: general
 date: 2026-03-29
@@ -16,11 +16,11 @@ links:
   adr: null
   pr: null
 files:
-  - history/prompts/001-calc-cli/0016-create-feature-branch-001-calc-cli.general.prompt.md
-  - history/prompts/001-calc-cli/0017-initialize-implementation-plan-for-calculator-cli.plan.prompt.md
-  - history/prompts/general/0013-execute-agentic-git-workflow.general.prompt.md
-  - history/prompts/general/0014-merge-feature-to-main-and-cleanup.general.prompt.md
-  - history/prompts/general/0015-delete-remote-feature-branch.general.prompt.md
+  - history/prompts/001-calc-cli/0004-create-feature-branch-001-calc-cli.general.prompt.md
+  - history/prompts/001-calc-cli/0005-initialize-implementation-plan-for-calculator-cli.plan.prompt.md
+  - history/prompts/general/0012-execute-agentic-git-workflow.general.prompt.md
+  - history/prompts/general/0013-merge-feature-to-main-and-cleanup.general.prompt.md
+  - history/prompts/general/0014-delete-remote-feature-branch.general.prompt.md
   - specs/001-calc-cli/contracts/cli.md
   - specs/001-calc-cli/data-model.md
   - specs/001-calc-cli/plan.md

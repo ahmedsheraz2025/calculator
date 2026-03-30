@@ -1,5 +1,5 @@
 ---
-id: 12
+id: "0003"
 title: Update Spec for Python Implementation
 stage: spec
 date_iso: 2026-03-29
@@ -18,7 +18,7 @@ links:
 files_yaml:
   - specs/001-calc-cli/spec.md
   - specs/001-calc-cli/checklists/requirements.md
-  - history/prompts/001-calc-cli/0012-update-spec-for-python-implementation.spec.prompt.md
+  - history/prompts/001-calc-cli/0003-update-spec-for-python-implementation.spec.prompt.md
 tests_yaml:
   - none
 ---

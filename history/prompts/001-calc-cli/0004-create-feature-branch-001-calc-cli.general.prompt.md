@@ -1,5 +1,5 @@
 ---
-id: 0016
+id: "0004"
 title: create feature branch 001-calc-cli
 stage: general
 date: 2026-03-29
@@ -16,7 +16,7 @@ links:
   adr: null
   pr: null
 files:
-  - history/prompts/001-calc-cli/0016-create-feature-branch-001-calc-cli.general.prompt.md
+  - history/prompts/001-calc-cli/0004-create-feature-branch-001-calc-cli.general.prompt.md
 tests:
 ---
 

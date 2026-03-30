@@ -1,5 +1,5 @@
 ---
-id: 14
+id: "0013"
 title: Merge Feature to Main and Cleanup
 stage: general
 date_iso: 2026-03-29
@@ -18,7 +18,7 @@ links:
 files_yaml:
   - specs/001-calc-cli/spec.md
   - specs/001-calc-cli/checklists/requirements.md
-  - history/prompts/general/0014-merge-feature-to-main-and-cleanup.general.prompt.md
+  - history/prompts/general/0013-merge-feature-to-main-and-cleanup.general.prompt.md
 tests_yaml:
   - none
 ---

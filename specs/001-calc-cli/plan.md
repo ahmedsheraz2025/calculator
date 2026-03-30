@@ -4,7 +4,7 @@
 
 ## Summary
 
-Implement a robust, PEP 8 compliant Python CLI calculator that supports basic arithmetic (+, -, *, /) with PEMDAS precedence, handles errors gracefully, and maintains high precision (10 decimal places). The approach will utilize Python's standard library to ensure simplicity and maintainability.
+Implement a robust, PEP 8 compliant Python CLI calculator that supports basic arithmetic (+, -, *, /) with PEMDAS precedence, handles errors gracefully, and maintains high precision (up to 10 decimal places only if needed). Results will be formatted as integers for whole numbers.
 
 ## Technical Context
 
@@ -15,7 +15,7 @@ Implement a robust, PEP 8 compliant Python CLI calculator that supports basic ar
 **Target Platform**: CLI / Terminal  
 **Project Type**: single  
 **Performance Goals**: < 50ms response time per calculation  
-**Constraints**: PEP 8 style, 10 decimal place precision, zero external dependencies preferred  
+**Constraints**: PEP 8 style, up to 10 decimal places (dynamic formatting), zero external dependencies preferred  
 **Scale/Scope**: Single-user interactive REPL
 
 ## Constitution Check
@@ -23,7 +23,7 @@ Implement a robust, PEP 8 compliant Python CLI calculator that supports basic ar
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
 - **Simplicity**: ✅ Plan uses standard library and minimal abstractions.
-- **Correctness**: ✅ 10 decimal place precision requirement included.
+- **Correctness**: ✅ High precision (up to 10 decimal places) requirement included.
 - **Robustness**: ✅ Error handling for division by zero and syntax errors mandated.
 - **Spec-First**: ✅ Specification `specs/001-calc-cli/spec.md` is complete and referenced.
 
