@@ -1,31 +1,69 @@
-# Calculator App
+# Calculator CLI
 
-A simple, fast, and robust calculator demonstrating **Spec-Driven Development (SDD)** and clean architectural principles.
+A robust, PEP 8 compliant Python CLI calculator that supports basic arithmetic with standard operator precedence (PEMDAS) and high precision.
 
-## 🚀 Purpose
-This project provides a reliable arithmetic engine for basic mathematical operations. It is built to ensure 100% correctness and handle edge cases gracefully, serving as a foundational template for agentic software engineering.
+## Features
 
-## 📜 Core Principles (Implementation Gates)
-- **Simplicity**: Minimal UI and computational overhead.
-- **Correctness**: 100% accurate mathematical results.
-- **Robustness**: Graceful error handling (e.g., division by zero).
-- **Spec-First**: Implementation always follows a validated specification and plan.
+- **Basic Arithmetic**: Support for `+`, `-`, `*`, and `/`.
+- **Precedence**: Correct handling of operator precedence (e.g., `5 + 3 * 2 = 11`).
+- **High Precision**: Uses `decimal` for accurate calculations with up to 10 decimal places.
+- **Dynamic Formatting**: Results are shown as integers for whole numbers and fractions only when necessary.
+- **Error Handling**: Graceful handling of division by zero and syntax errors.
+- **Interactive REPL**: Simple and easy-to-use terminal interface.
 
-## 🧮 Supported Operations
-- **Addition (`+`)**
-- **Subtraction (`-`)**
-- **Multiplication (`*`)**
-- **Division (`/`)**
+## Installation
 
-## 🛠️ Tech Stack & Standards
-- **Python 3.10+**: Standard library for arithmetic (`math`, `decimal`).
-- **uv**: Mandatory package and environment manager.
-- **Testing**: Mandatory unit tests using `pytest`.
+This project uses `uv` for dependency management.
 
-## 🚦 Getting Started
-1. **Explore Specs**: Check the `specs/` directory for detailed requirements.
-2. **Review Constitution**: Read `.specify/memory/constitution.md` for project-wide rules.
-3. **Run Tests**: (Commands will be added as implementation proceeds)
+1. Ensure you have `uv` installed.
+2. Clone the repository.
+3. Run `uv sync` to install dependencies and set up the environment.
 
-## 📄 License
-Check the project root for license details.
+## Usage
+
+Start the interactive calculator:
+
+```bash
+uv run src/main.py
+```
+
+### Examples
+
+```text
+calc > 5 + 3
+8
+calc > 1 / 3
+0.3333333333
+calc > (10 + 2) * 3
+36
+```
+
+### Commands
+
+- `clear`: Clears the terminal screen.
+- `exit` or `quit`: Exits the calculator.
+
+## Testing
+
+Run the test suite using `pytest`:
+
+```bash
+uv run pytest
+```
+
+## Linting
+
+Check code quality with `ruff`:
+
+```bash
+uv run ruff check src tests
+```
+
+## Technical Stack
+
+- **Language**: Python 3.12+
+- **Precision**: Standard Library `decimal` module
+- **Parsing**: Standard Library `ast` module
+- **Environment Management**: `uv`
+- **Testing**: `pytest`
+- **Linting**: `ruff`

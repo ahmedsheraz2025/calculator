@@ -1,0 +1,28 @@
+[project]
+name = "calculator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "ruff>=0.3.0",
+]
+
+[tool.ruff]
+# Target Python version
+target-version = "py312"
+# Line length limit
+line-length = 88
+
+[tool.ruff.lint]
+# Enable Pyflakes (F) and pycodestyle (E, W) codes by default
+select = ["E", "F", "W", "I", "D"]
+# Ignore specific rules if needed
+ignore = []
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"

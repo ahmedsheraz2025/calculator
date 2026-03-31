@@ -19,9 +19,9 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure per implementation plan in `src/` and `tests/`
-- [ ] T002 Initialize project with `uv init` and add `pytest` as a development dependency
-- [ ] T003 [P] Configure `ruff` for linting and formatting in `pyproject.toml`
+- [X] T001 Create project structure per implementation plan in `src/` and `tests/`
+- [X] T002 Initialize project with `uv init` and add `pytest` as a development dependency
+- [X] T003 [P] Configure `ruff` for linting and formatting in `pyproject.toml`
 
 ---
 
@@ -31,8 +31,8 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Setup basic logging infrastructure in `src/utils/logger.py`
-- [ ] T005 [P] Setup package initializers in `src/calculator/__init__.py` and `src/utils/__init__.py`
+- [X] T004 Setup basic logging infrastructure in `src/utils/logger.py`
+- [X] T005 [P] Setup package initializers in `src/calculator/__init__.py` and `src/utils/__init__.py`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -46,18 +46,18 @@
 
 ### Tests for User Story 1
 
-- [ ] T006 [P] [US1] Create unit tests for basic arithmetic (+, -, *, /) in `tests/unit/test_evaluator.py`
-- [ ] T007 [P] [US1] Create unit tests for expression parsing (including precedence) in `tests/unit/test_parser.py`
+- [X] T006 [P] [US1] Create unit tests for basic arithmetic (+, -, *, /) in `tests/unit/test_evaluator.py`
+- [X] T007 [P] [US1] Create unit tests for expression parsing (including precedence) in `tests/unit/test_parser.py`
 
 ### Implementation for User Story 1
 
-- [ ] T008 [US1] Implement AST-based expression parser in `src/calculator/parser.py`
-- [ ] T009 [US1] Implement arithmetic evaluator using `decimal` for high precision in `src/calculator/evaluator.py`
-- [ ] T010 [US1] Implement dynamic result formatting (integer for whole numbers, up to 10 decimals for fractions) in `src/calculator/evaluator.py`
-- [ ] T011 [US1] Implement REPL loop with `calc > ` prompt in `src/main.py`
-- [ ] T012 [US1] Implement support for negative number prefixes in `src/calculator/parser.py`
-- [ ] T013 [US1] Implement `exit`, `quit`, and `clear` commands in `src/main.py`
-- [ ] T014 [US1] Create integration tests for core CLI flow in `tests/integration/test_cli.py`
+- [X] T008 [US1] Implement AST-based expression parser in `src/calculator/parser.py`
+- [X] T009 [US1] Implement arithmetic evaluator using `decimal` for high precision in `src/calculator/evaluator.py`
+- [X] T010 [US1] Implement dynamic result formatting (integer for whole numbers, up to 10 decimals for fractions) in `src/calculator/evaluator.py`
+- [X] T011 [US1] Implement REPL loop with `calc > ` prompt in `src/main.py`
+- [X] T012 [US1] Implement support for negative number prefixes in `src/calculator/parser.py`
+- [X] T013 [US1] Implement `exit`, `quit`, and `clear` commands in `src/main.py`
+- [X] T014 [US1] Create integration tests for core CLI flow in `tests/integration/test_cli.py`
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently.
 
@@ -71,15 +71,15 @@
 
 ### Tests for User Story 2
 
-- [ ] T015 [P] [US2] Create error case unit tests for division by zero in `tests/unit/test_evaluator.py`
-- [ ] T016 [P] [US2] Create unit tests for invalid syntax scenarios in `tests/unit/test_parser.py`
+- [X] T015 [P] [US2] Create error case unit tests for division by zero in `tests/unit/test_evaluator.py`
+- [X] T016 [P] [US2] Create unit tests for invalid syntax scenarios in `tests/unit/test_parser.py`
 
 ### Implementation for User Story 2
 
-- [ ] T017 [US2] Implement division by zero protection in `src/calculator/evaluator.py`
-- [ ] T018 [US2] Implement syntax error detection and handling in `src/calculator/parser.py`
-- [ ] T019 [US2] Implement error message display logic in `src/main.py`
-- [ ] T020 [US2] Create integration tests for error scenarios in `tests/integration/test_cli.py`
+- [X] T017 [US2] Implement division by zero protection in `src/calculator/evaluator.py`
+- [X] T018 [US2] Implement syntax error detection and handling in `src/calculator/parser.py`
+- [X] T019 [US2] Implement error message display logic in `src/main.py`
+- [X] T020 [US2] Create integration tests for error scenarios in `tests/integration/test_cli.py`
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently.
 
@@ -93,8 +93,8 @@
 
 ### Implementation for User Story 3
 
-- [ ] T021 [US3] Add descriptive docstrings and inline comments to all core functions in `src/`
-- [ ] T022 [P] [US3] Run final formatting and linting check with `ruff` on all source and test files
+- [X] T021 [US3] Add descriptive docstrings and inline comments to all core functions in `src/`
+- [X] T022 [P] [US3] Run final formatting and linting check with `ruff` on all source and test files
 
 **Checkpoint**: All user stories should now be independently functional and meet quality standards.
 
@@ -104,9 +104,9 @@
 
 **Purpose**: Final documentation and validation
 
-- [ ] T023 [P] Update `README.md` with usage instructions and technical stack details
-- [ ] T024 Final validation of all scenarios defined in `specs/001-calc-cli/quickstart.md`
-- [ ] T025 [P] Run `pytest` to confirm 100% pass rate for all unit and integration tests
+- [X] T023 [P] Update `README.md` with usage instructions and technical stack details
+- [X] T024 Final validation of all scenarios defined in `specs/001-calc-cli/quickstart.md`
+- [X] T025 [P] Run `pytest` to confirm 100% pass rate for all unit and integration tests
 
 ---
 
