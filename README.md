@@ -18,9 +18,9 @@ This project provides a reliable arithmetic engine for basic mathematical operat
 - **Division (`/`)**
 
 ## 🛠️ Tech Stack & Standards
-- **Testing**: Mandatory unit tests for all arithmetic logic.
-- **Architecture**: Modular, pure functions, and no global state.
-- **Documentation**: All features documented in `specs/` following the Spec-kit Plus framework.
+- **Python 3.10+**: Standard library for arithmetic (`math`, `decimal`).
+- **uv**: Mandatory package and environment manager.
+- **Testing**: Mandatory unit tests using `pytest`.
 
 ## 🚦 Getting Started
 1. **Explore Specs**: Check the `specs/` directory for detailed requirements.

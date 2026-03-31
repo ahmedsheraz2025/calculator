@@ -61,12 +61,15 @@ As a developer/reviewer, I want the code to be clean, easy to understand, and we
 - **FR-004**: System MUST handle division by zero and syntax errors gracefully.
 - **FR-005**: System MUST support 'exit', 'quit', and 'clear' commands.
 - **FR-006**: System MUST follow standard operator precedence (PEMDAS).
+- **FR-007**: System MUST support negative numbers using a standard prefix (e.g., `-5 + 3`, `10 * -2`).
+- **FR-008**: System MUST display a `calc > ` prompt when waiting for user input in the REPL.
 
 ### Technical Constraints (User Mandated)
 
 - **TR-001**: Implementation MUST be in Python (3.10+).
 - **TR-002**: Code MUST adhere to PEP 8 style guidelines for readability.
 - **TR-003**: All primary logic and functions MUST be documented with comments and docstrings.
+- **TR-004**: Project dependencies and virtual environments MUST be managed using `uv`.
 
 ### Key Entities
 
@@ -82,3 +85,11 @@ As a developer/reviewer, I want the code to be clean, easy to understand, and we
 - **SC-003**: Zero crashes occur when processing invalid inputs (syntax or division by zero).
 - **SC-004**: Results are displayed in under 100ms for standard expressions.
 - **SC-005**: Code passes `flake8` or `black` formatting checks with zero errors.
+
+## Clarifications
+
+### Session 2026-03-30
+- Q: Should negative numbers be supported as direct inputs (e.g., -5 + 3)? → A: Support standard negative prefix (e.g., `-5 + 3`, `5 * -2`).
+- Q: What should the REPL input prompt look like? → A: Use a simple prefix prompt (e.g., `calc > `).
+- Q: How should the system handle empty or whitespace-only inputs? → A: Do nothing (stay on same line).
+c > `).

@@ -2,22 +2,26 @@
 
 ## Prerequisites
 - Python 3.10 or higher.
-- `pytest` for testing.
+- `uv` for package and environment management.
 
 ## Installation
-No installation needed. Run directly from the source.
+Initialize the project environment with `uv`:
+```bash
+uv venv
+uv pip install pytest
+```
 
 ## Running the Calculator
 ```bash
-python src/main.py
+uv run src/main.py
 ```
 
 ## Running Tests
 ```bash
-pytest tests/
+uv run pytest tests/
 ```
 
 ## Usage
-1.  Start the CLI: `python src/main.py`
+1.  Start the CLI: `uv run src/main.py`
 2.  Enter an expression: `10 + 20`
 3.  Exit: Type `exit` or `quit`.

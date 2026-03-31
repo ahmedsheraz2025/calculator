@@ -67,12 +67,14 @@ The calculator must support:
 
 ## 7. Governance
 - **RATIFICATION_DATE**: 2026-03-27
-- **LAST_AMENDED_DATE**: 2026-03-27
-- **CONSTITUTION_VERSION**: 1.0.0
+- **LAST_AMENDED_DATE**: 2026-03-30
+- **CONSTITUTION_VERSION**: 1.1.0
 - **Amendment Policy**: Changes to this constitution require a MAJOR version bump if they remove or redefine core principles, and a MINOR bump if they add new ones. PATCH bumps are for clarifications. All changes must be recorded in the Prompt History Record (PHR).
 
 ---
 
 ## 8. Constraints
 - The system must not use unnecessary complexity or external libraries unless strictly required for core functionality.
+- The system must prioritize correctness and safety over additional "nice-to-have" features.
+ or external libraries unless strictly required for core functionality.
 - The system must prioritize correctness and safety over additional "nice-to-have" features.

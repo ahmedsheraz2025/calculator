@@ -10,12 +10,13 @@ Implement a robust, PEP 8 compliant Python CLI calculator that supports basic ar
 
 **Language/Version**: Python 3.10+  
 **Primary Dependencies**: Standard Library (`math`, `decimal`, `ast` or `operator`)  
+**Package Manager**: `uv`  
 **Storage**: N/A  
 **Testing**: `pytest`  
 **Target Platform**: CLI / Terminal  
 **Project Type**: single  
 **Performance Goals**: < 50ms response time per calculation  
-**Constraints**: PEP 8 style, up to 10 decimal places (dynamic formatting), zero external dependencies preferred  
+**Constraints**: PEP 8 style, up to 10 decimal places (dynamic formatting), `uv` for environment management, zero external dependencies preferred  
 **Scale/Scope**: Single-user interactive REPL
 
 ## Constitution Check
