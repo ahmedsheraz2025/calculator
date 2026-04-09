@@ -18,6 +18,14 @@ lib/
 lib64/
 Python.h
 .venv/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Environment
+.env
+.env.*
 
 # Java
 *.class

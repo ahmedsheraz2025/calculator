@@ -1,5 +1,5 @@
 ---
-id: 0001
+id: "0001"
 title: Greeting and Session Start
 stage: general
 date: 2026-03-26
