@@ -37,5 +37,6 @@ def test_format_result():
     assert format_result(Decimal("8.0")) == "8"
     assert format_result(Decimal("0.3333333333")) == "0.3333333333"
     assert format_result(Decimal("5")) == "5"
+    assert format_result(Decimal("20")) == "20"
     # Truncated to 10 decimals
     assert format_result(Decimal("1.234567890123")) == "1.2345678901"

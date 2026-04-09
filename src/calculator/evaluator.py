@@ -47,12 +47,10 @@ def format_result(value: Decimal) -> str:
     Returns:
         A formatted string representing the value.
     """
-    # Truncate to 10 decimal places as per specification
-    formatted = value.quantize(Decimal('1e-10'), rounding=ROUND_HALF_UP).normalize()
+    # Truncate to 10 decimal places as per specification (FR-003)
+    # Using '1.0000000000' ensures we have at most 10 decimal places.
+    # normalize() removes trailing zeros.
+    formatted = value.quantize(Decimal('1.0000000000'), rounding=ROUND_HALF_UP).normalize()
 
-    # Check if result is functionally an integer
-    if formatted == formatted.to_integral_value():
-        return f"{formatted:g}"
-
-    # Return normalized scientific-free string representation
+    # Return scientific-free string representation (fixes 10+10 -> 2e+1 issue)
     return f"{formatted:f}"
